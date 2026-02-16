@@ -4,8 +4,8 @@ from models import Product
 app = FastAPI()
 
 Products = [
-        Product(1,"Iphone","Base Model",700,6),
-        Product(2,"Samsung","Galaxy",800,4)
+        Product(id=1,name="Iphone",description="Base Model",price=700,quantity=6),
+        Product(id=2,name="Samsung",description="Galaxy",price=800,quantity=4)
     ]
 
 @app.get("/")
